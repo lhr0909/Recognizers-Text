@@ -165,13 +165,13 @@ namespace Microsoft.Recognizers.Definitions.French
             { @"Ban", @"bani|-ban|ban" },
             { @"Roupie népalaise", @"roupie népalaise|roupie nepalaise|npr" },
             { @"Roupie pakistanaise", @"roupie pakistanaise|pkr" },
-            { @"Roupie indienne", @"roupie indienne|inr|roupie indien|inr|₹" },
+            { @"Roupie indienne", @"roupie indienne|roupies indiennes|inr|roupie indien|inr|₹" },
             { @"Roupie seychelloise", @"roupie seychelloise|scr|sr|sre" },
             { @"Roupie mauricienne", @"roupie mauricienne|mur" },
             { @"Rufiyaa maldives", @"rufiyaa maldives|mvr|.ރ|rf" },
             { @"Roupie srilankaise", @"roupie srilankaise|lrk|රු|ரூ" },
             { @"Rupiah Indonésie", @"rupia indonésie|rupia indonesie|rupiah|rp|idr" },
-            { @"Roupie", @"roupie" },
+            { @"Roupie", @"roupie|roupies" },
             { @"Couronne danoise", @"couronne danoise|dkk|couronnes danoise|couronne danemark|couronnes danemark" },
             { @"Couronne norvégienne", @"couronne norvégienne|couronne norvegienne|couronnes norvégienne|couronnes norvegienne|nok" },
             { @"Couronne féroïenne", @"couronne féroïenne|couronne feroienne" },
@@ -269,7 +269,10 @@ namespace Microsoft.Recognizers.Definitions.French
             { @"Yuan Chinois", @"yuan|yuans|yuan chinois|renminbi|cny|rmb|￥" },
             { @"Fen", @"fen" },
             { @"Jiao", @"jiao" },
-            { @"Mark Finlandais", @"marks finlandais|mark finlandais|fim|mark" }
+            { @"Mark Finlandais", @"marks finlandais|mark finlandais|fim|mark" },
+            { @"Bitcoin", @"bitcoin|bitcoins|btc|xbt|₿" },
+            { @"Millibitcoin", @"millibitcoin|millibitcoins|milibitcoin|milibitcoins" },
+            { @"Satoshi", @"satoshi|satoshis" }
         };
       public const string CompoundUnitConnectorRegex = @"(?<spacer>[^.])";
       public static readonly Dictionary<string, string> CurrencyPrefixList = new Dictionary<string, string>
@@ -301,7 +304,8 @@ namespace Microsoft.Recognizers.Definitions.French
             { @"Yuan Chinois", @"cny|rmb|￥|元" },
             { @"Yen Japonais", @"¥|jpy" },
             { @"Euro", @"€|eur" },
-            { @"Livre", @"£" }
+            { @"Livre", @"£" },
+            { @"Bitcoin", @"₿|btc|xbt" }
         };
       public static readonly IList<string> AmbiguousCurrencyUnitList = new List<string>
         {

@@ -150,13 +150,13 @@ class FrenchNumericWithUnit:
                                ("Ban", "bani|-ban|ban"),
                                ("Roupie népalaise", "roupie népalaise|roupie nepalaise|npr"),
                                ("Roupie pakistanaise", "roupie pakistanaise|pkr"),
-                               ("Roupie indienne", "roupie indienne|inr|roupie indien|inr|₹"),
+                               ("Roupie indienne", "roupie indienne|roupies indiennes|inr|roupie indien|inr|₹"),
                                ("Roupie seychelloise", "roupie seychelloise|scr|sr|sre"),
                                ("Roupie mauricienne", "roupie mauricienne|mur"),
                                ("Rufiyaa maldives", "rufiyaa maldives|mvr|.ރ|rf"),
                                ("Roupie srilankaise", "roupie srilankaise|lrk|රු|ரூ"),
                                ("Rupiah Indonésie", "rupia indonésie|rupia indonesie|rupiah|rp|idr"),
-                               ("Roupie", "roupie"),
+                               ("Roupie", "roupie|roupies"),
                                ("Couronne danoise", "couronne danoise|dkk|couronnes danoise|couronne danemark|couronnes danemark"),
                                ("Couronne norvégienne", "couronne norvégienne|couronne norvegienne|couronnes norvégienne|couronnes norvegienne|nok"),
                                ("Couronne féroïenne", "couronne féroïenne|couronne feroienne"),
@@ -254,7 +254,10 @@ class FrenchNumericWithUnit:
                                ("Yuan Chinois", "yuan|yuans|yuan chinois|renminbi|cny|rmb|￥"),
                                ("Fen", "fen"),
                                ("Jiao", "jiao"),
-                               ("Mark Finlandais", "marks finlandais|mark finlandais|fim|mark")])
+                               ("Mark Finlandais", "marks finlandais|mark finlandais|fim|mark"),
+                               ("Bitcoin", "bitcoin|bitcoins|btc|xbt|₿"),
+                               ("Millibitcoin", "millibitcoin|millibitcoins|milibitcoin|milibitcoins"),
+                               ("Satoshi", "satoshi|satoshis")])
     CompoundUnitConnectorRegex = f'(?<spacer>[^.])'
     CurrencyPrefixList = dict([("Dollar", "$"),
                                ("Dollar États-Unis", "$us|usd|us$"),
@@ -283,7 +286,8 @@ class FrenchNumericWithUnit:
                                ("Yuan Chinois", "cny|rmb|￥|元"),
                                ("Yen Japonais", "¥|jpy"),
                                ("Euro", "€|eur"),
-                               ("Livre", "£")])
+                               ("Livre", "£"),
+                               ("Bitcoin", "₿|btc|xbt")])
     AmbiguousCurrencyUnitList = [r'din.', r'kina', r'lari', r'taka', r'tala', r'vatu', r'yuan', r'bob', r'btn', r'cop', r'cup', r'dop', r'gip', r'jod', r'kgs', r'lak', r'mga', r'mop', r'nad', r'omr', r'sar', r'sbd', r'scr', r'sdg', r'sek', r'sos', r'std', r'try', r'yer']
     InformationSuffixList = dict([("Bit", "-bit|bit|bits"),
                                   ("Kilobit", "kilobit|kilobits|kb|kbit|kbits"),
