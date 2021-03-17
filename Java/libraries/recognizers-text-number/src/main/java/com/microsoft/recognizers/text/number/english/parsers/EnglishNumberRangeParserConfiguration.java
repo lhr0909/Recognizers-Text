@@ -29,37 +29,37 @@ public class EnglishNumberRangeParserConfiguration implements INumberRangeParser
     public IExtractor getOrdinalExtractor() {
         return this.ordinalExtractor;
     }
-    
+
     @Override
     public IParser getNumberParser() {
         return this.numberParser;
     }
-    
+
     @Override
     public Pattern getMoreOrEqual() {
         return this.moreOrEqual;
     }
-    
+
     @Override
     public Pattern getLessOrEqual() {
         return this.lessOrEqual;
     }
-    
+
     @Override
     public Pattern getMoreOrEqualSuffix() {
         return this.moreOrEqualSuffix;
     }
-    
+
     @Override
     public Pattern getLessOrEqualSuffix() {
         return this.lessOrEqualSuffix;
     }
-    
+
     @Override
     public Pattern getMoreOrEqualSeparate() {
         return this.moreOrEqualSeparate;
     }
-    
+
     @Override
     public Pattern getLessOrEqualSeparate() {
         return this.lessOrEqualSeparate;

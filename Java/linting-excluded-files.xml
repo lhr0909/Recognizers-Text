@@ -7,4 +7,5 @@
 <suppressions>
     <suppress files="[\\/]resource-generator[\\/]" checks=".*"/>
     <suppress files="[\\/]resources[\\/]" checks=".*"/>
+    <suppress files="[\\/]recognizers-service[\\/]" checks=".*"/>
 </suppressions>
